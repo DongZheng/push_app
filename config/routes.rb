@@ -1,5 +1,5 @@
 PushApp::Application.routes.draw do
-  get "messages/index"
+  resources :messages, :only => [:index, :create]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
